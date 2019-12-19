@@ -16,7 +16,7 @@ namespace AdventOfCodeApp
 
         protected string[] GetMultiInput()
         {
-            return File.ReadAllLines(string.Format("{0}/Input.txt", this.GetType().Namespace.Split('.')[^0]));
+            return File.ReadAllLines(string.Format("{0}/Input.txt", this.GetType().Namespace.Split('.')[^1]));
         }
     }
 }
